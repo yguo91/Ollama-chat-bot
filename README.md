@@ -1,4 +1,4 @@
-# OLLAMA-WEB
+# OLLAMA-Chat-Bot
 
 A web-based AI chatbot demo using OLLAMA and Node.js.
 
