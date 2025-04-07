@@ -46,7 +46,7 @@ node setup-env.js
 node server.js
 ```
 
-And then in the client side web broswer visit [serverIP]:[port] such as "127.0.0.1:3000" .
+And then in the client side web browser visit [serverIP]:[port] such as "127.0.0.1:3000" .
 
 ## Folder Structure
 
