@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ollama Chat Bot</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    
+</head>
+<body>
+    <h2 id="chat-title">Eric's Family Chat Bot</h2>
+
+    <!-- Model Selection Dropdown (Options Loaded Dynamically) -->
+    <div id="model-container">
+        <label for="model-select">Choose a Model:</label>
+        <select id="model-select"></select>
+        <button onclick="clearChatHistory()">Clear Chat Memory</button>
+    </div>
+
+    <!-- Input box at the top with loading indicator -->
+    <div id="input-container">
+        <div id="loading-container">
+            <img src="timer.gif" alt="Loading..." id="loading-indicator">
+        </div>
+        <input type="text" id="prompt" placeholder="Enter your question..." onkeypress="handleKeyPress(event)">
+        <button onclick="askOllama()">Send</button>
+    </div>
+
+
+    <!-- Chat response box (now flexible) -->
+    <div id="chat-container">
+        <!-- <img src="timer.gif" alt="Loading..." id="loading-indicator"> -->
+    </div>
+
+</body>
+</html>

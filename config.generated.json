@@ -1,0 +1,26 @@
+{
+  "PORT": "3000",
+  "OLLAMA_URL": "http://127.0.0.1:11434/api/generate",
+  "models": [
+    {
+      "value": "huihui_ai/qwen2.5-1m-abliterated:latest",
+      "title": "Qwen 2.5_7b"
+    },
+    {
+      "value": "qwen2.5:3b",
+      "title": "通义千问2.5_3b"
+    },
+    {
+      "value": "triss:latest",
+      "title": "Triss Merigold"
+    },
+    {
+      "value": "roxy:latest",
+      "title": "Roxy Blade"
+    },
+    {
+      "value": "huihui_ai/deepseek-r1-abliterated:14b",
+      "title": "DeepSeek"
+    }
+  ]
+}

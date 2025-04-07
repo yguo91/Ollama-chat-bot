@@ -1,0 +1,15 @@
+OLLAMA-WEB/
+├── public/
+│   ├── index.html
+│   ├── main.css
+│   ├── main.js
+│   └── timer.gif
+├── logs/
+├── .env.example       <-- shared template
+├── .env               <-- local secrets (ignored)
+├── setup-env.js       <-- creates .env
+├── loadEnvConfig.js   <-- generates config.generated.json
+├── config.generated.json <-- generated at runtime (ignored)
+├── server.js
+├── .gitignore
+└── README.md
