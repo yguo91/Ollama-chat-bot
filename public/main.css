@@ -98,6 +98,11 @@ button:hover {
     margin-bottom: 15px;
 }
 
+#model-container label {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
 #model-select {
     font-size: 16px; /* Larger text */
     font-weight: bold;
