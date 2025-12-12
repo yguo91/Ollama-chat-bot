@@ -13,9 +13,9 @@
 
     <!-- Model Selection Dropdown (Options Loaded Dynamically) -->
     <div id="model-container">
-        <label for="model-select">Choose a Model:</label>
+        <label for="model-select">Choose a Model: </label>
         <select id="model-select"></select>
-        <button onclick="clearChatHistory()">Clear Chat Memory</button>
+        <button id="clear-history-btn">Clear Chat Memory</button>
     </div>
 
     <!-- Input box at the top with loading indicator -->
@@ -23,8 +23,8 @@
         <div id="loading-container">
             <img src="timer.gif" alt="Loading..." id="loading-indicator">
         </div>
-        <input type="text" id="prompt" placeholder="Enter your question..." onkeypress="handleKeyPress(event)">
-        <button onclick="askOllama()">Send</button>
+        <input type="text" id="prompt" placeholder="Enter your question...">
+        <button id="send-btn">Send</button>
     </div>
 
 

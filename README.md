@@ -40,27 +40,57 @@ npm install
 node setup-env.js
 ```
 
-3. Run the server:
+Or manually copy `.env.example` to `.env` and edit it with your preferred models.
+
+3. Configure your models in `.env`:
+
+```bash
+# You can add up to 20 models. Only models with both MODEL_X and TITLE_X will be loaded.
+MODEL_1=qwen2.5:3b
+TITLE_1=Qwen 2.5 (3B)
+
+MODEL_2=llama3.2:3b
+TITLE_2=Llama 3.2 (3B)
+```
+
+**To sync with your installed Ollama models:**
+```bash
+# List your installed models
+ollama list
+
+# Then add them to .env as MODEL_X and TITLE_X pairs
+```
+
+4. Run the server:
 
 ```bash
 node server.js
 ```
 
-And then in the client side web browser visit [serverIP]:[port] such as "127.0.0.1:3000" .
+The configuration is automatically loaded from `.env` on startup and saved to `config.generated.json`.
+
+5. Access the chatbot:
+- **Local:** `http://127.0.0.1:3000` or `http://localhost:3000`
+- **LAN:** `http://[your-ip]:3000` (e.g., `http://10.0.0.128:3000`)
+
+To find your IP: `ipconfig` (Windows) or `ifconfig` (Linux/Mac)
 
 ## Folder Structure
 
 ```
 OLLAMA-WEB/
-├── public/              # Frontend files
+├── public/                  # Frontend files
 │   ├── index.html
 │   ├── main.css
 │   ├── main.js
 │   └── timer.gif
-├── config.json          # Runtime config (structure only)
-├── server.js            # Server logic
-├── setup-env.js         # Script to create .env from example
-├── .env.example         # Environment variable template
+├── logs/                    # Request logs (auto-generated)
+├── loadEnvConfig.js         # Loads .env and generates config JSON
+├── config.generated.json    # Runtime config (auto-generated)
+├── server.js                # Server logic
+├── setup-env.js             # Script to create .env from example
+├── .env.example             # Environment variable template
+├── .env                     # Your actual config (create from .env.example)
 ├── .gitignore
 └── README.md
 ```

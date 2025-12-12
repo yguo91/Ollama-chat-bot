@@ -1,0 +1,54 @@
+{
+  "PORT": "3000",
+  "OLLAMA_URL": "http://127.0.0.1:11434/api/generate",
+  "models": [
+    {
+      "value": "deepseek-r1:1.5b",
+      "title": "DeepSeek R1 (1.5B)"
+    },
+    {
+      "value": "qwen2.5:3b",
+      "title": "Qwen 2.5 (3B)"
+    },
+    {
+      "value": "qwen2.5:3b-instruct-q4_K_M",
+      "title": "Qwen 2.5 Instruct (3B)"
+    },
+    {
+      "value": "deepseek-ocr:3b",
+      "title": "DeepSeek OCR (3B)"
+    },
+    {
+      "value": "huihui_ai/qwen2.5-1m-abliterated:latest",
+      "title": "Qwen 2.5 1M Abliterated"
+    },
+    {
+      "value": "huihui_ai/deepseek-r1-abliterated:latest",
+      "title": "DeepSeek R1 Abliterated"
+    },
+    {
+      "value": "huihui_ai/qwen3-vl-abliterated:8b",
+      "title": "Qwen3 VL Abliterated (8B)"
+    },
+    {
+      "value": "roxy:latest",
+      "title": "Roxy"
+    },
+    {
+      "value": "triss:latest",
+      "title": "Triss"
+    },
+    {
+      "value": "qwen3:14b",
+      "title": "Qwen 3 (14B)"
+    },
+    {
+      "value": "huihui_ai/qwen2.5-abliterate:14b",
+      "title": "Qwen 2.5 Abliterate (14B)"
+    },
+    {
+      "value": "huihui_ai/deepseek-r1-abliterated:14b",
+      "title": "DeepSeek R1 Abliterated (14B)"
+    }
+  ]
+}
